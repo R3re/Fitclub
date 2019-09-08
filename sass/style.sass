@@ -1,6 +1,5 @@
 @import "../css/fonts.css"
 @import "../css/normalize.css"
-@import "../css/reset.css"
 @import "../css/responsive.css"
 
 @mixin flex
@@ -8,26 +7,130 @@
   justify-content: space-between
   align-items: center
 
+@mixin bg_options
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: center center
+
+$orange: #fa7c30
+
 *
   box-sizing: border-box
   margin: 0
   padding: 0
+
+body
+  font:
+    family: 'OpenSans', sans-serif
+    size: 14px
+    weight: 400
 
 a
   display: block
   text-decoration: none
 
 ul, li
+  display: inline-block
   list-style-type: none
 
-body
+h2
   font:
-    family: 'OpenSans', sans-serif
+    size: 5em
+    weight: 700
+  color: #fff
+  text-transform: uppercase
+
+h3
+  font:
+    size: 2.5em
+    weight: 700
+  color: #161418
+  text-transform: uppercase
+
+.main__p, .main__p-bold
+  font:
     size: 1em
     weight: 400
+  color: #161418
+  line-height: 30px
+
+.main__p-bold
+  font-weight: 700
+
+.desc__p
+  font:
+    size: 1em
+    weight: 400
+  color: #161418
+
+.orange__text
+  color: #fa7f34
 
 .container
   max-width: 1600px
+  margin: 0 auto
 
 .wrapper
   padding: 0 250px
+
+.header
+  width: 100%
+  min-height: 950px
+  background-image: url('../img/bg_main.jpg')
+  @include bg_options
+
+
+.header__top
+  padding: 30px 30px
+  @include flex
+
+.header__menu, .login__buttons
+  font:
+    size: 70%
+    weight: 700
+  & a
+    color: #ffffff
+
+.header__menu
+  text-transform: uppercase
+  & li:nth-child(1)
+    margin-left: 25px
+  & li+li
+    margin-left: 25px
+
+.login__buttons
+  text-transform: uppercase
+  & li+li
+    margin-left: 25px
+  & li:nth-child(3)
+    padding: 15px 18px
+    border: 2px solid white
+
+.header__left
+  display: flex
+  justify-content: left
+
+.header__content
+  display: flex
+  flex-direction: column
+  justify-content: left
+  margin-top: 12.1em
+  text-transform: uppercase
+
+.header__p
+  margin-top: 2.1em
+  margin-bottom: 5em
+  font:
+    size: .8em
+    weight: 400
+  color: #fff
+
+.main__btn
+  width: 12em
+  padding: 1.2em 2em
+  background-color: $orange
+  color: #fff
+  text-transform: uppercase
+  border: none
+  outline: none
+  cursor: pointer
