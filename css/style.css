@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(../css/fonts.css);
 @import url(../css/normalize.css);
 @import url(../css/responsive.css);
@@ -37,6 +38,7 @@ h3 {
   text-transform: uppercase;
 }
 
+/* стили параграфов */
 .main__p, .main__p-bold {
   font-size: 1em;
   font-weight: 400;
@@ -45,15 +47,17 @@ h3 {
 }
 
 .main__p-bold {
-  font-weight: 700;
+  font-weight: 800;
 }
 
+/* описание для карточек товаров */
 .desc__p {
   font-size: 1em;
   font-weight: 400;
   color: #161418;
 }
 
+/* оранжевые буквы */
 .orange__text {
   color: #fa7f34;
 }
@@ -67,6 +71,7 @@ h3 {
   padding: 0 250px;
 }
 
+/* block-1 header */
 .header {
   width: 100%;
   min-height: 950px;
@@ -76,6 +81,7 @@ h3 {
   background-position: center center;
 }
 
+/* Верхняя часть хэдера */
 .header__top {
   padding: 30px 30px;
   display: flex;
@@ -122,6 +128,7 @@ h3 {
   justify-content: left;
 }
 
+/* Контент хэдера, заголовок */
 .header__content {
   display: flex;
   flex-direction: column;
@@ -133,7 +140,7 @@ h3 {
 .header__p {
   margin-top: 2.1em;
   margin-bottom: 5em;
-  font-size: .8em;
+  font-size: 1em;
   font-weight: 400;
   color: #fff;
 }
@@ -147,4 +154,104 @@ h3 {
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+/* form Online-booking */
+.online__booking {
+  position: absolute;
+  top: -210px;
+  left: 250px;
+  right: 250px;
+  background-color: #ffffff;
+}
+
+.online__booking-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking__desc {
+  padding: 65px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.booking__desc h3 {
+  margin-top: 25px;
+}
+
+.booking__desc .booking__desc-text {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.booking__desc .booking__desc-text span {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.booking__desc-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* form input-block */
+.booking__form-block {
+  width: 30%;
+  padding: 13px 15px 13px 0;
+  margin-bottom: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.booking__form-block:active {
+  outline: none;
+}
+
+.booking__form-block:focus {
+  outline: none;
+}
+
+.booking__form-date {
+  background: url("../img/date_shedule.png");
+}
+
+.booking__form-time {
+  background: url("../img/Timer_icon.png");
+}
+
+.booking__form-date, .booking__form-time {
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+/* block-2 Welcome */
+.welcome {
+  position: relative;
+  background-color: #f1f4f6;
+}
+
+.welcome-inner {
+  padding: 419px 55px 0 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome__text {
+  max-width: 390px;
+}
+
+.welcome__text h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.welcome__text .main__p-bold {
+  margin: 25px 0;
 }

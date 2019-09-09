@@ -47,6 +47,8 @@ h3
   color: #161418
   text-transform: uppercase
 
+
+/* стили параграфов */
 .main__p, .main__p-bold
   font:
     size: 1em
@@ -55,14 +57,16 @@ h3
   line-height: 30px
 
 .main__p-bold
-  font-weight: 700
+  font-weight: 800
 
+/* описание для карточек товаров */
 .desc__p
   font:
     size: 1em
     weight: 400
   color: #161418
 
+/* оранжевые буквы */
 .orange__text
   color: #fa7f34
 
@@ -73,13 +77,15 @@ h3
 .wrapper
   padding: 0 250px
 
+
+/* block-1 header */
 .header
   width: 100%
   min-height: 950px
   background-image: url('../img/bg_main.jpg')
   @include bg_options
 
-
+/* Верхняя часть хэдера */
 .header__top
   padding: 30px 30px
   @include flex
@@ -110,6 +116,7 @@ h3
   display: flex
   justify-content: left
 
+/* Контент хэдера, заголовок */
 .header__content
   display: flex
   flex-direction: column
@@ -121,7 +128,7 @@ h3
   margin-top: 2.1em
   margin-bottom: 5em
   font:
-    size: .8em
+    size: 1em
     weight: 400
   color: #fff
 
@@ -134,3 +141,75 @@ h3
   border: none
   outline: none
   cursor: pointer
+
+
+/* form Online-booking */
+.online__booking
+  position: absolute
+  top: -210px
+  left: 250px
+  right: 250px
+  background-color: #ffffff
+
+.online__booking-inner
+  display: flex
+  justify-content: space-between
+
+.booking__desc
+  padding: 65px 100px
+  @include flex
+  flex-direction: column
+  & h3
+    margin-top: 25px
+  & .booking__desc-text
+    text-align: center
+    text-transform: uppercase
+    & span
+      font:
+        size: 1.8em
+        weight: 700
+
+.booking__desc-form
+  @include flex
+  flex-wrap: wrap
+
+/* form input-block */
+.booking__form-block
+  width: 30%
+  padding: 13px 15px 13px 0
+  margin-bottom: 30px
+  outline: none
+  border: none
+  border-bottom: 1px solid black
+  &:active
+    outline: none
+  &:focus
+    outline: none
+
+.booking__form-date
+  background: url("../img/date_shedule.png")
+
+.booking__form-time
+  background: url("../img/Timer_icon.png")
+
+.booking__form-date, .booking__form-time
+  background-repeat: no-repeat
+  background-position: right
+
+
+/* block-2 Welcome */
+.welcome
+  position: relative
+  background-color: #f1f4f6
+
+.welcome-inner
+  padding: 419px 55px 0 250px
+  @include flex
+
+.welcome__text
+  max-width: 390px
+  & h3
+    font-weight: 700
+    text-transform: uppercase
+  & .main__p-bold
+    margin: 25px 0
