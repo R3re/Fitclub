@@ -1,11 +1,266 @@
 /* Landscape - телефоны */
-@media (max-width: 480px) {}
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .header {
+        min-height: auto;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .login__buttons li + li {
+        margin-left: 10px;
+    }
+
+    .login__buttons li:nth-child(3) {
+        padding: 10px;
+    }
+
+    .header h2 {
+        font-size: 2em;
+    }
+
+    .header__p {
+        margin-top: 2em;
+        font-size: .8em;
+    }
+
+    .header__content {
+        margin-top: 3.1em;
+    }
+
+    .online__booking-inner img {
+        display: none;
+    }
+
+    .wrapper {
+        padding: 0 30px;
+    }
+
+    .header__content {
+        margin-top: 2.0em;
+    }
+    .header__content button {
+        margin-bottom: 5em;
+    }
+
+    .online__booking {
+        top: 60px;
+        left: 30px;
+        right: 30px;
+    }
+
+    .booking__desc {
+        padding: 20px 30px;
+    }
+
+    .booking__desc h3 {
+        margin-top: 10px;
+        font-size: 2.0em;
+    }
+
+    .booking__desc-text span {
+        font-size: 1.4em!important;
+    }
+
+    .booking__desc-form {
+        margin-top: 15px;
+    }
+
+    .welcome-inner {
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .welcome__text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+
+    .welcome__text .main__p-bold {
+        margin: 10px 0;
+    }
+
+    .welcome__logo img {
+        margin-top: 50px;
+        width: 390px;
+        height: 505px;
+    }
+}
 
 /* От ландшафтного экрана телефона до потретного планшета */
-@media (max-width: 767px) {}
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    body {
+        font-size: 12px;
+    }
+
+    .header {
+        min-height: auto;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header h2 {
+        font-size: 3em;
+    }
+
+    .header__content {
+        margin-top: 3.1em;
+    }
+
+    .online__booking-inner img {
+        display: none;
+    }
+
+    .wrapper {
+        padding: 0 30px;
+    }
+
+    .header__content {
+        margin-top: 2.0em;
+    }
+    .header__content button {
+        margin-bottom: 5em;
+    }
+
+    .online__booking {
+        top: 60px;
+        left: 30px;
+        right: 30px;
+    }
+
+    .booking__desc {
+        padding: 20px 30px;
+    }
+
+    .booking__desc h3 {
+        margin-top: 10px;
+        font-size: 2.0em;
+    }
+
+    .booking__desc-text span {
+        font-size: 1.4em!important;
+    }
+
+    .booking__desc-form {
+        margin-top: 15px;
+    }
+
+    .welcome-inner {
+        flex-direction: column;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .welcome__text {
+        max-width: 100%;
+        text-align: center;
+    }
+
+
+    .welcome__text .main__p-bold {
+        margin: 10px 0;
+    }
+
+    .welcome__logo img {
+        margin-top: 50px;
+        width: 390px;
+        height: 505px;
+    }
+}
 
 /* От портретного планшета до ландшафтного экрана и настольных дисплеев */
-@media (min-width: 768px) and (max-width: 979px) {}
+@media screen and (min-width: 768px) and (max-width: 979px) {
+    body {
+        font-size: 12px;
+    }
+
+    .header {
+        min-height: 785px;
+    }
+
+    .online__booking-inner img {
+        display: none;
+    }
+
+    .wrapper {
+        padding: 0 100px;
+    }
+
+    .header__content {
+        margin-top: 5.1em;
+    }
+
+    .online__booking {
+        left: 100px;
+        right: 100px;
+    }
+
+    .booking__desc {
+        padding: 45px 70px;
+    }
+
+    .booking__desc-form {
+        margin-top: 15px;
+    }
+
+    .welcome-inner {
+        flex-direction: column;
+        padding-top: 279px;
+        padding-left: 100px;
+    }
+
+    .welcome__text {
+        max-width: 100%;
+        text-align: center;
+     }
+
+    .welcome__text .main__p-bold {
+        margin: 25px 0;
+    }
+
+    .welcome__logo img {
+        margin-top: 50px;
+        width: 390px;
+        height: 505px;
+    }
+}
 
 /* Большой дисплей */
-@media (min-width: 1200px) {}
+@media screen and (min-width: 980px) and (max-width: 1280px) {
+    .wrapper {
+        padding: 0 150px;
+    }
+
+
+    .online__booking {
+        left: 150px;
+        right: 150px;
+    }
+
+    .online__booking-inner img {
+        width: 300px;
+        height: 470px;
+    }
+
+    .booking__desc {
+        padding: 65px 70px;
+    }
+
+    .welcome-inner {
+        padding-left: 150px;
+    }
+
+    .welcome__logo img {
+        width: 485px;
+        height: 640px;
+    }
+}
