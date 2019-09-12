@@ -52,7 +52,7 @@ h3 {
 
 /* описание для карточек товаров */
 .desc__p {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 400;
   color: #161418;
 }
@@ -254,4 +254,93 @@ h3 {
 
 .welcome__text .main__p-bold {
   margin: 25px 0;
+}
+
+/* block-3 Photoblock */
+.photoblock {
+  background-color: #fff;
+  min-height: 976px;
+}
+
+.photoblock__text {
+  padding-top: 80px;
+}
+
+.photoblock__text p {
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.photoblock__image-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image__info {
+  width: 31.5%;
+  background-color: #f1f4f6;
+}
+
+.image__info img {
+  margin-bottom: 40px;
+  max-width: 100%;
+  height: auto;
+}
+
+.image__info span, .image__info p {
+  padding: 0 40px;
+}
+
+.image__info button {
+  margin-left: 40px;
+  margin-bottom: 50px;
+}
+
+.image__info span {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+.desc__p {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.personal__trainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 586px;
+  background-image: url(../img/bg_persTrainer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.personal__trainer::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.personal__trainer-inner {
+  text-align: center;
+  z-index: 3;
+}
+
+.personal__trainer-inner h3 {
+  margin-bottom: 25px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.personal__trainer-inner h2 {
+  margin-bottom: 50px;
 }
