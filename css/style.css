@@ -344,3 +344,93 @@ h3 {
 .personal__trainer-inner h2 {
   margin-bottom: 50px;
 }
+
+/* block-5 expert-trainers */
+.expert-trainers__inner {
+  max-width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.expert-trainers__photo-trainers {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expert-trainers__block {
+  width: 30%;
+}
+
+.expert-trainers__photo img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.expert-trainers__name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.expert-trainers__name p {
+  margin-bottom: 20px;
+}
+
+.expert-trainers__orange-text {
+  color: #fa7c30;
+  font-weight: 900;
+}
+
+.expert-trainers__description {
+  text-align: center;
+}
+
+/* block-6 free 5 days & call */
+.free-days {
+  width: 100%;
+  height: 440px;
+}
+
+.free-days__inner {
+  width: 100%;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.free-days__blocks {
+  width: 50%;
+  min-height: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.free-days__blocks h3 {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: white;
+  font-weight: 900;
+}
+
+.free-days__left {
+  background-image: url(../img/bg_footerLeft.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.free-days__right {
+  background-image: url(../img/bg_footerRight.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
